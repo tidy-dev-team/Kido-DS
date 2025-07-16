@@ -56,7 +56,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     if (!showLabel) return null;
 
     return (
-      <div className="ml-3 flex">
+      <div className="flex flex-col">
         <div className="flex items-center space-x-2 text-lg font-semibold text-gray-900">
           {showIcon && icon && <span className="text-gray-700">{icon}</span>}
           <span>{labelText}</span>
@@ -70,7 +70,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   };
 
   return (
-    <label className="flex row items-start cursor-pointer select-none">
+    <label className="flex row gap-1 cursor-pointer">
       <input
         type="checkbox"
         ref={setCheckboxRef}
