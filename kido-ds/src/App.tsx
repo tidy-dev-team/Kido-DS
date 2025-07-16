@@ -14,18 +14,33 @@ function App() {
   };
 
   return (
+    <>
     <Checkbox
       state={checkboxState}
       onChange={handleCheckboxChange}
       showLabel={true}
       labelText="Enable Feature"
       showCount={true}
-      count={2}
+      count={"2"}
       showDescription={true}
       description="This toggles the feature on or off."
       showIcon={true}
       icon={<img src={reactLogo} alt="React Logo" width={16} height={16} />}
     />
+    <br/><br/>
+    <Checkbox
+      state={checkboxState}
+      onChange={handleCheckboxChange}
+      showLabel={true}
+      labelText="Enable Feature"
+      showCount={true}
+      count={"4"}
+      showDescription={true}
+      description="This toggles the feature on or off."
+      showIcon={true}
+      icon={<img src={reactLogo} alt="React Logo" width={16} height={16} />}
+    />
+    </>
   );
 }
 

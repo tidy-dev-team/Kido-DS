@@ -16,7 +16,7 @@ interface CheckboxProps {
   showLabel?: boolean;
   labelText?: string;
   showCount?: boolean;
-  count?: number;
+  count?: string;
   showDescription?: boolean;
   description?: string;
   showIcon?: boolean;
@@ -60,7 +60,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
       <div className="checkbox-label">
         {showIcon && icon && <span className="checkbox-icon">{icon}</span>}
         <span className="checkbox-text">{labelText}</span>
-        {showCount && typeof count === "number" && (
+        {showCount && typeof count === "string" && (
           <span className="checkbox-count">({count})</span>
         )}
         {showDescription && description && (
