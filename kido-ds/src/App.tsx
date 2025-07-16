@@ -36,7 +36,7 @@ function App() {
         type={checkboxType2}
         onChange={handleCheckboxChange2}
         showLabel={true}
-        labelText="Enable Feature"
+        labelText="Label example"
         showCount={true}
         count={"4"}
         showDescription={true}
