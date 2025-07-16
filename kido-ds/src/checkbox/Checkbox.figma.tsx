@@ -1,5 +1,5 @@
 import React from "react"
-import { Checkbox, CheckboxSelectionType } from "./Checkbox"
+import { Checkbox, CheckboxType } from "./Checkbox"
 import figma from "@figma/code-connect"
 
 /**

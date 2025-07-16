@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import type { ChangeEvent, ReactNode } from "react";
-import "./Checkbox.css";
 
 export const CheckboxType = {
   unchecked: "unchecked",
@@ -29,7 +28,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   showLabel = false,
   labelText = "",
   showCount = false,
-  count = 0,
+  count = "0",
   showDescription = false,
   description = "",
   showIcon = false,
@@ -57,29 +56,28 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     if (!showLabel) return null;
 
     return (
-      <div className="checkbox-label">
-        {showIcon && icon && <span className="checkbox-icon">{icon}</span>}
-        <span className="checkbox-text">{labelText}</span>
-        {showCount && typeof count === "string" && (
-          <span className="checkbox-count">({count})</span>
-        )}
+      <div className="ml-3 flex flex-col">
+        <div className="flex items-center space-x-2 text-lg font-semibold text-gray-900">
+          {showIcon && icon && <span className="text-gray-700">{icon}</span>}
+          <span>{labelText}</span>
+          {showCount && <span className="text-sm text-gray-500">({count})</span>}
+        </div>
         {showDescription && description && (
-          <div className="checkbox-description">{description}</div>
+          <p className="text-sm text-gray-500 mt-1">{description}</p>
         )}
       </div>
     );
   };
 
   return (
-    <label className="checkbox-container">
+    <label className="inline-flex items-start cursor-pointer select-none">
       <input
         type="checkbox"
         ref={setCheckboxRef}
         checked={type === CheckboxType.checked}
         onChange={handleChange}
-        className="checkbox-input"
+        className="h-5 w-5 mt-1 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
       />
-      <span className="checkbox-custom" />
       {renderLabel()}
     </label>
   );
