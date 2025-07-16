@@ -63,7 +63,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
           {showCount && <span className="text-gray-600">({count})</span>}
         </div>
         {showDescription && description && (
-          <p className="text-sm text-gray-500 pl-6">{description}</p>
+          <p className="text-sm text-gray-600 pl-6">{description}</p>
         )}
       </div>
     );
@@ -76,7 +76,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         ref={setCheckboxRef}
         checked={type === CheckboxType.checked}
         onChange={handleChange}
-        className="h-4 w-4 m-2 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+        className="h-4 w-4 m-2 accent-indigo-500 border-gray-300 rounded focus:ring-indigo-600"
       />
       {renderLabel()}
     </label>
