@@ -1,4 +1,3 @@
-import React from "react"
 import { Checkbox, CheckboxType } from "./Checkbox"
 import figma from "@figma/code-connect"
 
@@ -41,7 +40,7 @@ figma.connect(
       }),
     },
     example: (props) => <Checkbox
-      type={props.selectionType}
+      type={props.selectionType as CheckboxType}
       onChange={() => { }}
       showLabel={props.label}
       labelText={props.labelText}
