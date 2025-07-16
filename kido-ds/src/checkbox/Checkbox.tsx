@@ -76,7 +76,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         ref={setCheckboxRef}
         checked={type === CheckboxType.checked}
         onChange={handleChange}
-        className="h-4 w-4 m-2 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+        className="h-4 w-4 m-2 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
       />
       {renderLabel()}
     </label>
