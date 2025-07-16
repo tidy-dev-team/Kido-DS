@@ -2,17 +2,17 @@ import React, { useEffect, useState } from "react";
 import type { ChangeEvent, ReactNode } from "react";
 import "./Checkbox.css";
 
-export const CheckboxState = {
-  Unchecked: "unchecked",
-  Indeterminate: "indeterminate",
-  Checked: "checked",
+export const CheckboxType = {
+  unchecked: "unchecked",
+  indeterminate: "indeterminate",
+  checked: "checked",
 } as const;
 
-export type CheckboxState = (typeof CheckboxState)[keyof typeof CheckboxState];
+export type CheckboxType = (typeof CheckboxType)[keyof typeof CheckboxType];
 
 interface CheckboxProps {
-  state: CheckboxState;
-  onChange: (newState: CheckboxState) => void;
+  type: CheckboxType;
+  onChange: (newselectionType: CheckboxType) => void;
   showLabel?: boolean;
   labelText?: string;
   showCount?: boolean;
@@ -24,7 +24,7 @@ interface CheckboxProps {
 }
 
 export const Checkbox: React.FC<CheckboxProps> = ({
-  state,
+  type,
   onChange,
   showLabel = false,
   labelText = "",
@@ -39,17 +39,17 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 
   useEffect(() => {
     if (checkboxRef) {
-      checkboxRef.indeterminate = state === CheckboxState.Indeterminate;
+      checkboxRef.indeterminate = type === CheckboxType.indeterminate;
     }
-  }, [checkboxRef, state]);
+  }, [checkboxRef, type]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (state === CheckboxState.Unchecked) {
-      onChange(CheckboxState.Checked);
-    } else if (state === CheckboxState.Checked) {
-      onChange(CheckboxState.Indeterminate);
+    if (type === CheckboxType.unchecked) {
+      onChange(CheckboxType.checked);
+    } else if (type === CheckboxType.checked) {
+      onChange(CheckboxType.indeterminate);
     } else {
-      onChange(CheckboxState.Unchecked);
+      onChange(CheckboxType.unchecked);
     }
   };
 
@@ -75,7 +75,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
       <input
         type="checkbox"
         ref={setCheckboxRef}
-        checked={state === CheckboxState.Checked}
+        checked={type === CheckboxType.checked}
         onChange={handleChange}
         className="checkbox-input"
       />
