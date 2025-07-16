@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import { Checkbox, CheckboxType } from './checkbox/Checkbox';
-import reactLogo from './assets/react.svg';
+// import reactLogo from './assets/react.svg';
+import ReactLogo from './assets/react.svg?react';
 
 function App() {
   const [checkboxType1, setCheckboxType1] = useState<CheckboxType>(CheckboxType.unchecked);
@@ -29,7 +30,7 @@ function App() {
         showDescription={true}
         description="This toggles the feature on or off."
         showIcon={true}
-        icon={<img src={reactLogo} alt="React Logo" width={16} height={16} />}
+        icon={<ReactLogo />}
       />
       <br /><br />
       <Checkbox
@@ -37,12 +38,11 @@ function App() {
         onChange={handleCheckboxChange2}
         showLabel={true}
         labelText="Label example"
-        showCount={true}
-        count={"4"}
+        showCount={false}
         showDescription={true}
-        description="This toggles the feature on or off."
+        description="Bla bla bla bla bla bla bla bla."
         showIcon={true}
-        icon={<img src={reactLogo} alt="React Logo" width={16} height={16} />}
+        icon={<ReactLogo />}
       />
     </>
   );
