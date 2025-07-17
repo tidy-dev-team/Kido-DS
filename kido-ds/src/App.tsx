@@ -20,6 +20,7 @@ function App() {
 
   return (
     <>
+    <div className='backdrop-blur-md bg-white/30 p-4'>BLA BLA</div>
       <Checkbox
         type={checkboxType1}
         onChange={handleCheckboxChange1}
