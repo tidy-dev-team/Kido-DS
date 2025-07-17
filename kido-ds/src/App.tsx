@@ -20,6 +20,7 @@ function App() {
 
   return (
     <>
+    <div className='bg-blue-500 p-4 rounded-sm'></div>
       <Checkbox
         type={checkboxType1}
         onChange={handleCheckboxChange1}
