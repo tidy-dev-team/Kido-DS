@@ -56,7 +56,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     if (!showLabel) return null;
 
     return (
-      <div className="flex flex-col gap-5 mt-1">
+      <div className="flex flex-col gap-1 mt-1">
         <div className="flex items-center gap-1 text-gray-900">
           {showIcon && icon && <span className="h-5 w-5 flex items-center justify-center text-gray-600 *:h-5 *:w-5">{icon}</span>}
           <span>{labelText}</span>
