@@ -70,7 +70,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   };
 
   return (
-    <label className="flex row gap-5 cursor-pointer text-base">
+    <label className="flex row gap-1 cursor-pointer text-base">
       <input
         type="checkbox"
         ref={setCheckboxRef}
