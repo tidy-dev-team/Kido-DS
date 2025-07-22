@@ -6,7 +6,7 @@ import ReactLogo from './assets/react.svg?react';
 
 function App() {
   const [checkboxType1, setCheckboxType1] = useState<CheckboxType>(CheckboxType.unchecked);
-  const [checkboxType2, setCheckboxType2] = useState<CheckboxType>(CheckboxType.unchecked);
+  const [checkboxType2, setCheckboxType2] = useState<CheckboxType>(CheckboxType.checked);
 
   const handleCheckboxChange1 = (newState: CheckboxType) => {
     console.log("Checkbox 1 changed to:", newState);
