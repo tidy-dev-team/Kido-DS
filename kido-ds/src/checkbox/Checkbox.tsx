@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import type { ChangeEvent, ReactNode } from "react";
+import type { ReactNode } from "react";
 
 export const CheckboxType = {
   unchecked: "unchecked",
@@ -42,7 +42,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     }
   }, [checkboxRef, type]);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = () => {
     if (type === CheckboxType.unchecked) {
       onChange(CheckboxType.checked);
     } else if (type === CheckboxType.checked) {
