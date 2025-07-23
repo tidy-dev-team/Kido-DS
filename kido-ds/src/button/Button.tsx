@@ -34,7 +34,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   const variantClasses =
     variant === 'contained'
-      ? 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 focus-visible:ring-blue-500'
+      ? 'bg-indigo-500 text-white hover:bg-blue-700 active:bg-blue-800 focus-visible:ring-blue-500'
       : variant === 'outlined'
       ? 'border border-blue-600 text-blue-600 hover:bg-blue-50 active:bg-blue-100 focus-visible:ring-blue-500'
       : 'text-blue-600 hover:bg-blue-50 active:bg-blue-100 focus-visible:ring-blue-500';
