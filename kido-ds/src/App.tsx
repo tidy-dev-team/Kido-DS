@@ -3,6 +3,7 @@ import './App.css';
 import { Checkbox, CheckboxType } from './checkbox/Checkbox';
 // import reactLogo from './assets/react.svg';
 import ReactLogo from './assets/react.svg?react';
+import { Button } from './button/Button';
 
 function App() {
   const [checkboxType1, setCheckboxType1] = useState<CheckboxType>(CheckboxType.unchecked);
@@ -20,6 +21,9 @@ function App() {
 
   return (
     <>
+      <Button size="l" variant="contained" iconL={<ReactLogo />}>
+        Large Button
+      </Button>
       <Checkbox
         type={checkboxType1}
         onChange={handleCheckboxChange1}
