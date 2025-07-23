@@ -21,9 +21,18 @@ function App() {
 
   return (
     <>
-      <Button size="l" variant="contained" iconL={<ReactLogo />}>
-        Large Button
-      </Button>
+      <div className='flex gap-2 items-center'>
+        <Button size="l" variant="contained" iconL={<ReactLogo />}>
+          Large Button
+        </Button>
+        <Button size="m" variant="contained" iconL={<ReactLogo />}>
+          Large Button
+        </Button>
+        <Button size="s" variant="contained" iconL={<ReactLogo />}>
+          Large Button
+        </Button>
+      </div>
+      <br /><br />
       <Checkbox
         type={checkboxType1}
         onChange={handleCheckboxChange1}

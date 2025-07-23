@@ -27,10 +27,10 @@ export const Button: React.FC<ButtonProps> = ({
 
   const sizeClasses =
     size === 'l'
-      ? 'text-base px-6 py-3 gap-2'
+      ? 'text-base px-6 py-3 gap-2 h-12'
       : size === 'm'
-      ? 'text-sm px-4 py-2 gap-2'
-      : 'text-xs px-3 py-1.5 gap-1.5';
+      ? 'text-sm px-4 py-2 gap-2 h-10'
+      : 'text-xs px-3 py-1.5 gap-1.5 h-8';
 
   const variantClasses =
     variant === 'contained'
