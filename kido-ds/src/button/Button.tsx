@@ -45,9 +45,9 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button className={finalClassName} disabled={disabled} {...props}>
-      {iconL && <span className="mr-2 flex items-center">{iconL}</span>}
+      {iconL && <span className="h-5 w-5 flex items-center justify-center *:h-5 *:w-5">{iconL}</span>}
       <span>{children}</span>
-      {iconR && <span className="ml-2 flex items-center">{iconR}</span>}
+      {iconR && <span className="h-5 w-5 flex items-center justify-center *:h-5 *:w-5">{iconR}</span>}
     </button>
   );
 };
