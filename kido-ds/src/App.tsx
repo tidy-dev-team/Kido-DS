@@ -23,13 +23,13 @@ function App() {
     <>
       <div className='flex gap-2 items-center'>
         <Button size="l" variant="contained" iconL={<ReactLogo />}>
-          Large Button
+          Large
         </Button>
         <Button size="m" variant="contained" iconL={<ReactLogo />}>
-          Large Button
+          Medium
         </Button>
         <Button size="s" variant="contained" iconL={<ReactLogo />}>
-          Large Button
+          Small
         </Button>
       </div>
       <br /><br />

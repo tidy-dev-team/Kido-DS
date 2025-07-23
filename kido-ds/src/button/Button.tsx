@@ -23,7 +23,7 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseClasses =
-    'inline-flex items-center justify-center rounded-xl font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+    'inline-flex items-center justify-center rounded-lg font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 disabled:opacity-50 disabled:cursor-not-allowed';
 
   const sizeClasses =
     size === 'l'
@@ -34,10 +34,10 @@ export const Button: React.FC<ButtonProps> = ({
 
   const variantClasses =
     variant === 'contained'
-      ? 'bg-indigo-500 text-white hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring-blue-500'
+      ? 'bg-indigo-500 text-white hover:bg-indigo-600 active:bg-indigo-700'
       : variant === 'outlined'
-      ? 'border border-blue-600 text-blue-600 hover:bg-blue-50 active:bg-blue-100 focus-visible:ring-blue-500'
-      : 'text-blue-600 hover:bg-blue-50 active:bg-blue-100 focus-visible:ring-blue-500';
+      ? 'border border-blue-600 text-blue-600 hover:bg-blue-50 active:bg-blue-100'
+      : 'text-blue-600 hover:bg-blue-50 active:bg-blue-100';
 
   const finalClassName = `${baseClasses} ${sizeClasses} ${variantClasses} ${
     disabled ? 'disabled:pointer-events-none' : ''
