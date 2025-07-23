@@ -32,6 +32,42 @@ function App() {
           Small
         </Button>
       </div>
+      <br />
+      <div className='flex gap-2 items-center'>
+        <Button size="l" variant="contained">
+          OK
+        </Button>
+        <Button size="m" variant="contained">
+          OK
+        </Button>
+        <Button size="s" variant="contained">
+          OK
+        </Button>
+      </div>
+      <br /><br />
+      <div className='flex gap-2 items-center'>
+        <Button size="l" variant="outlined" iconL={<ReactLogo />}>
+          Large
+        </Button>
+        <Button size="m" variant="outlined" iconL={<ReactLogo />}>
+          Medium
+        </Button>
+        <Button size="s" variant="outlined" iconL={<ReactLogo />}>
+          Small
+        </Button>
+      </div>
+      <br /><br />
+      <div className='flex gap-2 items-center'>
+        <Button size="l" variant="ghost" iconL={<ReactLogo />}>
+          Large
+        </Button>
+        <Button size="m" variant="ghost" iconL={<ReactLogo />}>
+          Medium
+        </Button>
+        <Button size="s" variant="ghost" iconL={<ReactLogo />}>
+          Small
+        </Button>
+      </div>
       <br /><br />
       <Checkbox
         type={checkboxType1}
