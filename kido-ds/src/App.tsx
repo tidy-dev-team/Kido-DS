@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <div className='flex gap-2 items-center'>
-        <Button size="l" variant="contained" iconL={<ReactLogo />}>
+        <Button size="l" variant="contained" iconL={<ReactLogo />} disabled>
           Large
         </Button>
         <Button size="m" variant="contained" iconL={<ReactLogo />}>
@@ -46,7 +46,7 @@ function App() {
       </div>
       <br /><br />
       <div className='flex gap-2 items-center'>
-        <Button size="l" variant="outlined" iconL={<ReactLogo />}>
+        <Button size="l" variant="outlined" iconL={<ReactLogo />} disabled>
           Large
         </Button>
         <Button size="m" variant="outlined" iconL={<ReactLogo />}>
@@ -58,7 +58,7 @@ function App() {
       </div>
       <br /><br />
       <div className='flex gap-2 items-center'>
-        <Button size="l" variant="ghost" iconL={<ReactLogo />}>
+        <Button size="l" variant="ghost" iconL={<ReactLogo />} disabled>
           Large
         </Button>
         <Button size="m" variant="ghost" iconL={<ReactLogo />}>
