@@ -27,62 +27,62 @@ function App() {
           type="initials"
           initials="AA"
           shape="circle"
-          size={24}
+          size="24"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="circle"
-          size={32}
+          size="32"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="circle"
-          size={40}
+          size="40"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="circle"
-          size={52}
+          size="52"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="circle"
-          size={64}
+          size="64"
         />
 
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={24}
+          size="24"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={32}
+          size="32"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={40}
+          size="40"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={52}
+          size="52"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={64}
+          size="64"
         />
       </div>
       <br />
@@ -91,62 +91,62 @@ function App() {
           type="initials"
           initials="AA"
           shape="rounded"
-          size={24}
+          size="24"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="rounded"
-          size={32}
+          size="32"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="rounded"
-          size={40}
+          size="40"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="rounded"
-          size={52}
+          size="52"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="rounded"
-          size={64}
+          size="64"
         />
 
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="rounded"
-          size={24}
+          size="24"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="rounded"
-          size={32}
+          size="32"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="rounded"
-          size={40}
+          size="40"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="rounded"
-          size={52}
+          size="52"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="rounded"
-          size={64}
+          size="64"
         />
       </div>
       <br />
@@ -155,62 +155,62 @@ function App() {
           type="initials"
           initials="AA"
           shape="square"
-          size={24}
+          size="24"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="square"
-          size={32}
+          size="32"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="square"
-          size={40}
+          size="40"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="square"
-          size={52}
+          size="52"
         />
         <Avatar
           type="initials"
           initials="AA"
           shape="square"
-          size={64}
+          size="64"
         />
 
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={24}
+          size="24"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={32}
+          size="32"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={40}
+          size="40"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={52}
+          size="52"
         />
         <Avatar
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={64}
+          size="64"
         />
       </div>
       <br />
@@ -219,7 +219,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="circle"
-          size={24}
+          size="24"
           upperBadge
           lowerBadge
         />
@@ -227,7 +227,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="circle"
-          size={32}
+          size="32"
           upperBadge
           lowerBadge
         />
@@ -235,7 +235,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="circle"
-          size={40}
+          size="40"
           upperBadge
           lowerBadge
         />
@@ -243,7 +243,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="circle"
-          size={52}
+          size="52"
           upperBadge
           lowerBadge
         />
@@ -251,7 +251,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="circle"
-          size={64}
+          size="64"
           upperBadge
           lowerBadge
         />
@@ -260,7 +260,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={24}
+          size="24"
           upperBadge
           lowerBadge
         />
@@ -268,7 +268,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={32}
+          size="32"
           upperBadge
           lowerBadge
         />
@@ -276,7 +276,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={40}
+          size="40"
           upperBadge
           lowerBadge
         />
@@ -284,7 +284,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={52}
+          size="52"
           upperBadge
           lowerBadge
         />
@@ -292,91 +292,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="circle"
-          size={64}
-          upperBadge
-          lowerBadge
-        />
-      </div>
-      <br />
-      <div className='flex gap-4 items-center'>
-        <Avatar
-          type="initials"
-          initials="AA"
-          shape="rounded"
-          size={24}
-          upperBadge
-          lowerBadge
-        />
-        <Avatar
-          type="initials"
-          initials="AA"
-          shape="rounded"
-          size={32}
-          upperBadge
-          lowerBadge
-        />
-        <Avatar
-          type="initials"
-          initials="AA"
-          shape="rounded"
-          size={40}
-          upperBadge
-          lowerBadge
-        />
-        <Avatar
-          type="initials"
-          initials="AA"
-          shape="rounded"
-          size={52}
-          upperBadge
-          lowerBadge
-        />
-        <Avatar
-          type="initials"
-          initials="AA"
-          shape="rounded"
-          size={64}
-          upperBadge
-          lowerBadge
-        />
-
-        <Avatar
-          type="picture"
-          imageUrl="https://i.pravatar.cc/300"
-          shape="rounded"
-          size={24}
-          upperBadge
-          lowerBadge
-        />
-        <Avatar
-          type="picture"
-          imageUrl="https://i.pravatar.cc/300"
-          shape="rounded"
-          size={32}
-          upperBadge
-          lowerBadge
-        />
-        <Avatar
-          type="picture"
-          imageUrl="https://i.pravatar.cc/300"
-          shape="rounded"
-          size={40}
-          upperBadge
-          lowerBadge
-        />
-        <Avatar
-          type="picture"
-          imageUrl="https://i.pravatar.cc/300"
-          shape="rounded"
-          size={52}
-          upperBadge
-          lowerBadge
-        />
-        <Avatar
-          type="picture"
-          imageUrl="https://i.pravatar.cc/300"
-          shape="rounded"
-          size={64}
+          size="64"
           upperBadge
           lowerBadge
         />
@@ -386,8 +302,92 @@ function App() {
         <Avatar
           type="initials"
           initials="AA"
+          shape="rounded"
+          size="24"
+          upperBadge
+          lowerBadge
+        />
+        <Avatar
+          type="initials"
+          initials="AA"
+          shape="rounded"
+          size="32"
+          upperBadge
+          lowerBadge
+        />
+        <Avatar
+          type="initials"
+          initials="AA"
+          shape="rounded"
+          size="40"
+          upperBadge
+          lowerBadge
+        />
+        <Avatar
+          type="initials"
+          initials="AA"
+          shape="rounded"
+          size="52"
+          upperBadge
+          lowerBadge
+        />
+        <Avatar
+          type="initials"
+          initials="AA"
+          shape="rounded"
+          size="64"
+          upperBadge
+          lowerBadge
+        />
+
+        <Avatar
+          type="picture"
+          imageUrl="https://i.pravatar.cc/300"
+          shape="rounded"
+          size="24"
+          upperBadge
+          lowerBadge
+        />
+        <Avatar
+          type="picture"
+          imageUrl="https://i.pravatar.cc/300"
+          shape="rounded"
+          size="32"
+          upperBadge
+          lowerBadge
+        />
+        <Avatar
+          type="picture"
+          imageUrl="https://i.pravatar.cc/300"
+          shape="rounded"
+          size="40"
+          upperBadge
+          lowerBadge
+        />
+        <Avatar
+          type="picture"
+          imageUrl="https://i.pravatar.cc/300"
+          shape="rounded"
+          size="52"
+          upperBadge
+          lowerBadge
+        />
+        <Avatar
+          type="picture"
+          imageUrl="https://i.pravatar.cc/300"
+          shape="rounded"
+          size="64"
+          upperBadge
+          lowerBadge
+        />
+      </div>
+      <br />
+      <div className='flex gap-4 items-center'>
+        <Avatar
+          type="initials"
+          initials="AA"
           shape="square"
-          size={24}
+          size="24"
           upperBadge
           lowerBadge
         />
@@ -395,7 +395,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="square"
-          size={32}
+          size="32"
           upperBadge
           lowerBadge
         />
@@ -403,7 +403,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="square"
-          size={40}
+          size="40"
           upperBadge
           lowerBadge
         />
@@ -411,7 +411,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="square"
-          size={52}
+          size="52"
           upperBadge
           lowerBadge
         />
@@ -419,7 +419,7 @@ function App() {
           type="initials"
           initials="AA"
           shape="square"
-          size={64}
+          size="64"
           upperBadge
           lowerBadge
         />
@@ -428,7 +428,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={24}
+          size="24"
           upperBadge
           lowerBadge
         />
@@ -436,7 +436,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={32}
+          size="32"
           upperBadge
           lowerBadge
         />
@@ -444,7 +444,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={40}
+          size="40"
           upperBadge
           lowerBadge
         />
@@ -452,7 +452,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={52}
+          size="52"
           upperBadge
           lowerBadge
         />
@@ -460,7 +460,7 @@ function App() {
           type="picture"
           imageUrl="https://i.pravatar.cc/300"
           shape="square"
-          size={64}
+          size="64"
           upperBadge
           lowerBadge
         />

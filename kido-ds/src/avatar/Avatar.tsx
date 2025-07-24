@@ -2,7 +2,7 @@ import React from "react";
 
 type AvatarType = "picture" | "initials";
 type AvatarShape = "circle" | "rounded" | "square";
-type AvatarSize = 24 | 32 | 40 | 52 | 64;
+type AvatarSize = "24" | "32" | "40" | "52" | "64";
 
 interface AvatarProps {
     type: AvatarType;
@@ -16,11 +16,11 @@ interface AvatarProps {
 }
 
 const sizeMap: Record<AvatarSize, string> = {
-    24: "w-6 h-6 text-xs",
-    32: "w-8 h-8 text-xs",
-    40: "w-10 h-10 text-base",
-    52: "w-13 h-13 text-base",
-    64: "w-16 h-16 text-xl",
+    "24": "w-6 h-6 text-xs",
+    "32": "w-8 h-8 text-xs",
+    "40": "w-10 h-10 text-base",
+    "52": "w-13 h-13 text-base",
+    "64": "w-16 h-16 text-xl",
 };
 
 const shapeMap: Record<AvatarShape, string> = {
@@ -32,7 +32,7 @@ const shapeMap: Record<AvatarShape, string> = {
 export const Avatar: React.FC<AvatarProps> = ({
     type,
     shape = "circle",
-    size = 40,
+    size = "40",
     imageUrl,
     initials,
     upperBadge = false,
