@@ -45,7 +45,7 @@ export const Avatar: React.FC<AvatarProps> = ({
 
     return (
         <div className="relative">
-            <div className={`relative inline-flex items-center justify-center ${sizeClasses} ${shapeClasses} bg-gray-200 overflow-hidden ${outlineClasses}`}>
+            <div className={`relative inline-flex items-center justify-center ${sizeClasses} ${shapeClasses} bg-indigo-200 overflow-hidden ${outlineClasses}`}>
                 {type === "picture" && imageUrl ? (
                     <img
                         src={imageUrl}
@@ -53,7 +53,7 @@ export const Avatar: React.FC<AvatarProps> = ({
                         className={`object-cover ${sizeClasses} ${shapeClasses}`}
                     />
                 ) : (
-                    <span className="font-semibold text-gray-700 select-none">
+                    <span className="font-semibold text-indigo-700 select-none">
                         {initials?.slice(0, 2).toUpperCase() || "?"}
                     </span>
                 )}

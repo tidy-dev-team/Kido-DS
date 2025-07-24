@@ -34,6 +34,14 @@ function App() {
         <Avatar
           type="initials"
           initials="AD"
+          shape="rounded"
+          size={40}
+          lowerBadge
+          outline
+        />
+        <Avatar
+          type="initials"
+          initials="AD"
           shape="square"
           size={40}
           lowerBadge
