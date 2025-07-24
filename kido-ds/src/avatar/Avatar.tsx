@@ -17,9 +17,9 @@ interface AvatarProps {
 
 const sizeMap: Record<AvatarSize, string> = {
     24: "w-6 h-6 text-xs",
-    32: "w-8 h-8 text-sm",
+    32: "w-8 h-8 text-xs",
     40: "w-10 h-10 text-base",
-    52: "w-13 h-13 text-lg",
+    52: "w-13 h-13 text-base",
     64: "w-16 h-16 text-xl",
 };
 
@@ -44,7 +44,7 @@ export const Avatar: React.FC<AvatarProps> = ({
     const outlineClasses = outline ? "ring-2 ring-white" : "";
 
     return (
-        <div className="relative">
+        <div className={`relative ${sizeClasses}`}>
             <div className={`relative inline-flex items-center justify-center ${sizeClasses} ${shapeClasses} bg-indigo-200 overflow-hidden ${outlineClasses}`}>
                 {type === "picture" && imageUrl ? (
                     <img
@@ -53,7 +53,7 @@ export const Avatar: React.FC<AvatarProps> = ({
                         className={`object-cover ${sizeClasses} ${shapeClasses}`}
                     />
                 ) : (
-                    <span className="font-semibold text-indigo-700 select-none">
+                    <span className="font-medium text-indigo-700 select-none">
                         {initials?.slice(0, 2).toUpperCase() || "?"}
                     </span>
                 )}
