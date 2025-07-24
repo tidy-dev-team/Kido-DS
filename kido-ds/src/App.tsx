@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <div className='flex gap-8 flex-wrap items-center w-2xl max-w-[60vw]'>
+      <div className='flex gap-8 flex-wrap items-center justify-between w-2xl max-w-[60vw]'>
         <Avatar
           type="initials"
           initials="AA"
@@ -127,31 +127,31 @@ function App() {
 
         <Avatar
           type="initials"
-          initials="CC"
+          initials="JS"
           shape="rounded"
           size="24"
         />
         <Avatar
           type="initials"
-          initials="CC"
+          initials="JS"
           shape="rounded"
           size="32"
         />
         <Avatar
           type="initials"
-          initials="CC"
+          initials="JS"
           shape="rounded"
           size="40"
         />
         <Avatar
           type="initials"
-          initials="CC"
+          initials="JS"
           shape="rounded"
           size="52"
         />
         <Avatar
           type="initials"
-          initials="CC"
+          initials="JS"
           shape="rounded"
           size="64"
         />
@@ -170,6 +170,27 @@ function App() {
           size="24"
           upperBadge
         />
+
+        <Button size="s" variant="contained">
+          Enabled
+        </Button>
+        <Button size="s" variant="contained" disabled>
+          Disabled
+        </Button>
+
+        <Button size="s" variant="outlined">
+          Enabled
+        </Button>
+        <Button size="s" variant="outlined" disabled>
+          Disabled
+        </Button>
+
+        <Button size="s" variant="ghost">
+          Enabled
+        </Button>
+        <Button size="s" variant="ghost" disabled>
+          Disabled
+        </Button>
 
       </div>
     </>
