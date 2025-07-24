@@ -53,6 +53,7 @@ function App() {
           shape="rounded"
           size={40}
           upperBadge
+          outline
         />
       </div>
       <div className='flex gap-2 items-center'>

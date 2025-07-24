@@ -59,11 +59,11 @@ export const Avatar: React.FC<AvatarProps> = ({
                 )}
             </div>
             {upperBadge && (
-                <div className="absolute -top-1.5 -right-1.5 size-3 bg-red-500 rounded-full"></div>
+                <div className="absolute -top-1 -right-1 size-2 bg-red-500 rounded-full"></div>
             )}
 
             {lowerBadge && (
-                <div className="absolute -bottom-1.5 -right-1.5 size-3 bg-green-500 rounded-full"></div>
+                <div className="absolute -bottom-1 -right-1 size-2 bg-green-500 rounded-full"></div>
             )}
         </div>
     );
