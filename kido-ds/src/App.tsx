@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <div className='flex gap-5 flex-wrap items-center'>
+      <div className='flex gap-8 flex-wrap items-center w-2xl max-w-[60vw]'>
         <Avatar
           type="initials"
           initials="AA"
@@ -87,6 +87,9 @@ function App() {
         <Button size="m" variant="ghost" iconL={<ReactLogo />}>
           Medium
         </Button>
+        <Button size="m" variant="ghost" iconR={<ReactLogo />}>
+          Click
+        </Button>
 
         <Checkbox
           type={checkboxType1}
@@ -112,15 +115,62 @@ function App() {
           icon={<ReactLogo />}
         />
         <Checkbox
-          type={checkboxType3}
-          onChange={handleCheckboxChange3}
-          showLabel={true}
-          labelText="Label example"
-        />
-        <Checkbox
           type={checkboxType4}
           onChange={handleCheckboxChange4}
         />
+        <Checkbox
+          type={checkboxType3}
+          onChange={handleCheckboxChange3}
+          showLabel={true}
+          labelText="Checkbox"
+        />
+
+        <Avatar
+          type="initials"
+          initials="CC"
+          shape="rounded"
+          size="24"
+        />
+        <Avatar
+          type="initials"
+          initials="CC"
+          shape="rounded"
+          size="32"
+        />
+        <Avatar
+          type="initials"
+          initials="CC"
+          shape="rounded"
+          size="40"
+        />
+        <Avatar
+          type="initials"
+          initials="CC"
+          shape="rounded"
+          size="52"
+        />
+        <Avatar
+          type="initials"
+          initials="CC"
+          shape="rounded"
+          size="64"
+        />
+
+        <Avatar
+          type="picture"
+          imageUrl="https://i.pravatar.cc/300"
+          shape="square"
+          size="64"
+          upperBadge
+        />
+        <Avatar
+          type="picture"
+          imageUrl="https://i.pravatar.cc/300"
+          shape="square"
+          size="24"
+          upperBadge
+        />
+
       </div>
     </>
   );
