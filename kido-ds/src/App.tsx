@@ -4,6 +4,7 @@ import { Checkbox, CheckboxType } from './checkbox/Checkbox';
 // import reactLogo from './assets/react.svg';
 import ReactLogo from './assets/react.svg?react';
 import { Button } from './button/Button';
+import { Avatar } from './avatar/Avatar'
 
 function App() {
   const [checkboxType1, setCheckboxType1] = useState<CheckboxType>(CheckboxType.unchecked);
@@ -21,6 +22,31 @@ function App() {
 
   return (
     <>
+      <div className='flex gap-2 items-center'>
+        <Avatar
+          type="initials"
+          initials="AD"
+          shape="circle"
+          size={40}
+          lowerBadge
+          outline
+        />
+        <Avatar
+          type="initials"
+          initials="AD"
+          shape="square"
+          size={40}
+          lowerBadge
+          outline
+        />
+        <Avatar
+          type="picture"
+          imageUrl="https://i.pravatar.cc/300"
+          shape="rounded"
+          size={40}
+          upperBadge
+        />
+      </div>
       <div className='flex gap-2 items-center'>
         <Button size="l" variant="contained" iconL={<ReactLogo />} disabled>
           Large
