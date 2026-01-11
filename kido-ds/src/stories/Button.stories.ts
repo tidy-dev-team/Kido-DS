@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { Button } from '../button/Button';
-import { IconPlus, IconArrowRight, IconDownload, IconTrash } from '@tabler/icons-react';
+import { IconPlus, IconArrowRight, IconDownload } from '@tabler/icons-react';
 
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
@@ -49,13 +49,31 @@ export const Default: Story = {
   },
 };
 
-export const WithIcon: Story = {
+export const WithLeftIcon: Story = {
   args: {
     children: 'Button',
     size: 'm',
     variant: 'contained',
   },
   render: (args) => React.createElement(Button, { ...args, iconL: React.createElement(IconPlus) }),
+};
+
+export const withRightIcon: Story = {
+  args: {
+    children: 'Button',
+    size: 'm',
+    variant: 'contained',
+  },
+  render: (args) => React.createElement(Button, { ...args, iconR: React.createElement(IconArrowRight) }),
+};
+
+export const withBothIcons: Story = {
+  args: {
+    children: 'Button',
+    size: 'm',
+    variant: 'contained',
+  },
+  render: (args) => React.createElement(Button, { ...args, iconL: React.createElement(IconPlus), iconR: React.createElement(IconArrowRight) }),
 };
 
 export const Large: Story = {
