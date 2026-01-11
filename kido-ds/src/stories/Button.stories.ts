@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import React from 'react';
 import { Button } from '../button/Button';
 import { IconPlus, IconArrowRight, IconDownload, IconTrash } from '@tabler/icons-react';
 
@@ -48,9 +49,18 @@ export const Default: Story = {
   },
 };
 
+export const WithIcon: Story = {
+  args: {
+    children: 'Button',
+    size: 'm',
+    variant: 'contained',
+  },
+  render: (args) => React.createElement(Button, { ...args, iconL: React.createElement(IconPlus) }),
+};
+
 export const Large: Story = {
   args: {
-    children: 'Large Button',
+    children: 'Button',
     size: 'l',
     variant: 'contained',
   },
@@ -58,7 +68,7 @@ export const Large: Story = {
 
 export const Medium: Story = {
   args: {
-    children: 'Medium Button',
+    children: 'Button',
     size: 'm',
     variant: 'contained',
   },
@@ -66,7 +76,7 @@ export const Medium: Story = {
 
 export const Small: Story = {
   args: {
-    children: 'Small Button',
+    children: 'Button',
     size: 's',
     variant: 'contained',
   },
@@ -91,4 +101,12 @@ export const Ghost: Story = {
     children: 'Ghost',
     variant: 'ghost',
   },
+};
+
+export const GhostWithIcon: Story = {
+  args: {
+    children: 'Ghost',
+    variant: 'ghost',
+  },
+  render: (args) => React.createElement(Button, { ...args, iconL: React.createElement(IconDownload) }),
 };
